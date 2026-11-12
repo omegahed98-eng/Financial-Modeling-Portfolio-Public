@@ -1,0 +1,95 @@
+{
+  "9": {
+    "file": "/mnt/data/.portfolio_work/fresh/Model_09_PL_Budget.xlsx",
+    "test": {
+      "cell": "BL01 Manager!G7",
+      "alternative": "Staging!K7",
+      "before": 148800,
+      "after": -1,
+      "check": "Checks!B9",
+      "baseline": {
+        "target": "PASS",
+        "overall": "PASS"
+      },
+      "negative": {
+        "target": "FAIL",
+        "overall": "FAIL"
+      },
+      "restored": {
+        "target": "PASS",
+        "overall": "PASS"
+      },
+      "result": "PASS"
+    },
+    "lastrow": 78
+  },
+  "10": {
+    "file": "/mnt/data/.portfolio_work/fresh/Model_10_Rolling_Forecast.xlsx",
+    "test": {
+      "cell": "Inputs!B12",
+      "before": 2,
+      "after": 5,
+      "check": "Checks!B9",
+      "baseline": {
+        "target": "PASS",
+        "overall": "PASS"
+      },
+      "negative": {
+        "target": "FAIL",
+        "overall": "FAIL"
+      },
+      "restored": {
+        "target": "PASS",
+        "overall": "PASS"
+      },
+      "result": "PASS"
+    },
+    "lastrow": 276
+  },
+  "11": {
+    "file": "/mnt/data/.portfolio_work/fresh/Model_11_Variance_PVM_Bridge.xlsx",
+    "test": {
+      "cell": "Staging!L7",
+      "before": 1000,
+      "after": -1,
+      "check": "Checks!B9",
+      "baseline": {
+        "target": "PASS",
+        "overall": "PASS"
+      },
+      "negative": {
+        "target": "FAIL",
+        "overall": "FAIL"
+      },
+      "restored": {
+        "target": "PASS",
+        "overall": "PASS"
+      },
+      "result": "PASS"
+    },
+    "lastrow": 14
+  },
+  "12": {
+    "file": "/mnt/data/.portfolio_work/fresh/Model_12_13_Week_Cash_Flow.xlsx",
+    "test": {
+      "cell": "Staging!O8",
+      "before": "2027-01-05 00:00:00+00:00",
+      "after": null,
+      "check": "Checks!B9",
+      "baseline": {
+        "target": "PASS",
+        "overall": "PASS"
+      },
+      "negative": {
+        "target": "FAIL",
+        "overall": "FAIL"
+      },
+      "restored": {
+        "target": "PASS",
+        "overall": "PASS"
+      },
+      "result": "PASS"
+    },
+    "lastrow": 40
+  }
+}

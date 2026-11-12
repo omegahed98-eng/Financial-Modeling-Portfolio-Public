@@ -1,0 +1,2 @@
+TransDate,Credit,Debit,Ref,Unit,Dept,GL,ExtraColumn
+2027-01-01,180000,0,BANK-OPEN,HQ,Finance,BANK,ignore

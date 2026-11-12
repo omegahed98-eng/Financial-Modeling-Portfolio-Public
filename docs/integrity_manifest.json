@@ -1,0 +1,107 @@
+{
+  "build_date": "2026-11-09",
+  "status": "UNPUBLISHED",
+  "model_files": [
+    {
+      "number": 1,
+      "name": "Model_01_Universal_Bid_Pricing_Fixed.xlsx",
+      "source": "Model_01_Universal_Bid_Pricing_Fixed(2).xlsx",
+      "sha256": "e3e2af90da3b740b6d463c3df7eaffed76a826c5fe36a6f8da076e35e3a64eb4",
+      "bytes": 148587,
+      "unchanged_baseline": true
+    },
+    {
+      "number": 2,
+      "name": "Model_02_Manufacturing_Costing_Fixed.xlsx",
+      "source": "Model_02_Manufacturing_Costing_Fixed(1).xlsx",
+      "sha256": "cd3411f725e0d0866839a51e3d7e0f2de597f0ff549dddb41434a0eab653fc62",
+      "bytes": 97776,
+      "unchanged_baseline": true
+    },
+    {
+      "number": 3,
+      "name": "Model_03_Three_Statement_FPA_Fixed.xlsx",
+      "source": "Model_03_Three_Statement_FPA_Fixed(2).xlsx",
+      "sha256": "25b3145533bd69253c4f92e5c72f4fd4508b4c95ed9186a1aa3e01e54e2c4139",
+      "bytes": 125029,
+      "unchanged_baseline": true
+    },
+    {
+      "number": 4,
+      "name": "Model_04_Capital_Investment_Fixed.xlsx",
+      "source": "Model_04_Capital_Investment_Fixed(1).xlsx",
+      "sha256": "c567a1ff3c14fc499b4837e19c6e3ad726974c4915e2a75b106f6646b0f809e9",
+      "bytes": 99878,
+      "unchanged_baseline": true
+    },
+    {
+      "number": 5,
+      "name": "Model_05_Working_Capital_Cash_Forecast_Fixed.xlsx",
+      "source": "Model_05_Working_Capital_Cash_Forecast_Fixed(2).xlsx",
+      "sha256": "125e149d95fcc87e27b69ee00df6ae07a5531516de4648622c894ddd86b1cf40",
+      "bytes": 128567,
+      "unchanged_baseline": true
+    },
+    {
+      "number": 6,
+      "name": "Model_06_Pricing_Product_Mix_Fixed.xlsx",
+      "source": "Model_06_Pricing_Product_Mix_Fixed(1).xlsx",
+      "sha256": "ed4d46aed2933b9327370f7dedfdc4a1d2f72f2094449b1d726ac1974a18904f",
+      "bytes": 101489,
+      "unchanged_baseline": true
+    },
+    {
+      "number": 7,
+      "name": "Model_07_Acquisition_Diligence_Fixed.xlsx",
+      "source": "Model_07_Acquisition_Diligence_Fixed(1).xlsx",
+      "sha256": "e00cab547513ad3abb049d532d3c7305ba1cb874d5eb59f1dca9dd0dd3f3e647",
+      "bytes": 137704,
+      "unchanged_baseline": true
+    },
+    {
+      "number": 8,
+      "name": "Model_08_Management_Reporting_Forecast_Accuracy_Fixed.xlsx",
+      "source": "Model_08_Management_Reporting_Forecast_Accuracy_Fixed(1).xlsx",
+      "sha256": "a4d7f5b8341e666cf12cbeb39dbea9b7ddd5889b04a807c5970c5609153bb390",
+      "bytes": 130997,
+      "unchanged_baseline": true
+    },
+    {
+      "number": 9,
+      "name": "Model_09_PL_Budget.xlsx",
+      "source": "Model_09_PL_Budget.xlsx",
+      "sha256": "497735115015db7937186c8c871b1096aa3f9a6914eaceb9aa58e93808db4e4d",
+      "bytes": 57024,
+      "unchanged_baseline": false
+    },
+    {
+      "number": 10,
+      "name": "Model_10_Rolling_Forecast.xlsx",
+      "source": "Model_10_Rolling_Forecast.xlsx",
+      "sha256": "819237295b47247d7158907a850d58c50c3a841290e9283948a737110a15e41c",
+      "bytes": 61657,
+      "unchanged_baseline": false
+    },
+    {
+      "number": 11,
+      "name": "Model_11_Variance_PVM_Bridge.xlsx",
+      "source": "Model_11_Variance_PVM_Bridge.xlsx",
+      "sha256": "2ca136bab6cf521e41af3b98f444c55eedbeda321c42172e056a618eccab944c",
+      "bytes": 43059,
+      "unchanged_baseline": false
+    },
+    {
+      "number": 12,
+      "name": "Model_12_13_Week_Cash_Flow.xlsx",
+      "source": "Model_12_13_Week_Cash_Flow.xlsx",
+      "sha256": "bd33995a3f029d3a54d16fc539779fd970a1239ab2912e29441b4198aa342516",
+      "bytes": 46642,
+      "unchanged_baseline": false
+    }
+  ],
+  "supporting": {
+    "name": "Supporting_Schedules_Template_Fixed.xlsx",
+    "sha256": "abc81eb47af88ecb40ede725e3859eed2833588bdb6e3cb00f90288914e2326f",
+    "unchanged_baseline": true
+  }
+}
