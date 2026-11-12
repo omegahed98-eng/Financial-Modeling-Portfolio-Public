@@ -6,6 +6,12 @@ The models cover business-line planning, source-system extracts, margin analysis
 
 > **Start with the [portfolio guide](docs/START_HERE.md)** for a quick read, the source-data contract and instructions for using the workbooks.
 
+## Try it
+
+**Demo (2 minutes):** Download any one `.xlsx` from `models/`, open it in Excel, and go to `Cover` → `Outputs` → `Checks`. Demo data is already loaded. You do not need any other files or setup.
+
+**Use your own data:** This is supported in Models 09–12. You need your CSV/XLSX extract and the two Power Query queries installed once in desktop Excel. Follow the [Quickstart](docs/QUICKSTART.md) for the steps. Models 01–08 use built-in synthetic data and need no input files.
+
 ## Models by discipline
 
 ### FP&A Core

@@ -50,15 +50,9 @@ All four new files use the **identical 21-column `Staging!A6:U6` canonical fact 
 
 ## Using one of the new workbooks
 
-1. Open **Cover**, then **Outputs**, then **Checks**. The default example has `Checks!B3 = PASS` and no confidential data.
-2. For Model 09, edit the yellow `AmountCAD` cells on the three business-line manager sheets. These feed the demo staging data and the total-company model through internal formulas.
-3. For a real extract, read **Source Register** (grain, dimensions present/missing and defaults), **Header Map** (raw header aliases), **Dimensions** (cross-source aliases) and **Period Map** (month labels). Each source has a ten-step workflow on **Extract Steps**.
-4. Set `Inputs!B7` to the root folder containing your extracts, `Inputs!B8` to the chosen source ID and `Inputs!B9` to `SINGLE`, or set `ALL` to combine `Enabled=Y` source rows. Adjust the source file `RelativePath` in Source Register column D. No changes to the M code are needed for another supported CSV/XLSX file schema once the map is configured.
-5. **One-time setup required:** Install `qCanonicalStaging` and `qStagingErrors` from the **Power Query** worksheet (or `power-query/*.pq` files) in desktop Excel through Data → Get Data → Blank Query → Advanced Editor. Load the first query to **Staging** and the second to **Quality Log**, replacing the preloaded demo staging contents. Then **Refresh All** responds to parameter changes.
-6. Inspect `QualityStatus=FAIL` and `QualityMessage` before relying on an output. Missing optional columns are filled with null/declared defaults; renamed headers use aliases; extra columns are ignored; unknown populated dimension codes and invalid amounts are rejected. The calculation engine includes only `PASS` rows.
-7. For an integration to another portfolio workbook, export an approved canonical fact extract and map its keys to that workbook's input expectations. **No workbook contains formula links to another workbook.**
+Use the [Quickstart](QUICKSTART.md) for the complete instructions. It covers the two-minute demo and the separate process for connecting your own CSV/XLSX files to Models 09–12. It also lists which repository files are required, optional or reference only.
 
-**Source formats and examples:** Models 09–11 include ERP-like exports, GL/CSV data and Excel alternatives. Model 12 includes bank CSV/Excel alternatives, a GL cash extract, AR/AP subledger records, inventory commitments and payroll. The bank illustration is an **opening balance snapshot**, not a full transaction-to-bank reconciliation. Source file formats demonstrated are CSV and XLSX; database APIs, OFX, encrypted banks and unrestricted schema inference are not implemented.
+For Models 09–12, the demo data is already loaded in `Staging`. Connecting your own data requires setting `Inputs!B7`, `Inputs!B8` and `Inputs!B9`, installing `qCanonicalStaging` and `qStagingErrors` once in desktop Excel, and then running Refresh All. The setup is manual; Refresh All is not preconfigured. Models 01–08 need no external input files.
 
 ## Verification and limitations
 
