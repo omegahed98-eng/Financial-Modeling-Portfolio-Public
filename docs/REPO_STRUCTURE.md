@@ -1,10 +1,10 @@
-# Proposed GitHub repository structure (design only)
+# GitHub repository structure
 
-This tree is the published repository contents.
+The repository contains the following files and folders.
 
 ```text
-finance-models-showcase/
-├── README.md                            # hiring manager entry point
+Financial-Modeling-Portfolio-Public/
+├── README.md                            # start here
 ├── models/
 │   ├── Model_01_Universal_Bid_Pricing_Fixed.xlsx
 │   ├── Model_02_Manufacturing_Costing_Fixed.xlsx
@@ -40,10 +40,10 @@ finance-models-showcase/
             m12_ar.csv / m12_ap.xlsx / m12_inventory.csv / m12_payroll.csv
 ```
 
-## Navigation rationale
+## Repository layout
 
-Keep the root README short. Offer four discipline subsections with direct workbook links and one dedicated Start Here link. Separate verification and technical source code from hiring-manager narrative. Keep existing eight models untouched in `models/`; avoid internal workbook hyperlinks to other XLSX files. The staged `.pq` files make M source readable and reviewable without opening Excel.
+The root README is the entry point. It groups the workbooks by discipline and links to Start Here. Verification results and source code sit in `docs/` and `power-query/`, separate from the portfolio overview. The original eight models remain in `models/`. Workbooks do not link to other XLSX files. The `.pq` files let readers inspect the Power Query M code without opening Excel.
 
 ## Publication restrictions
 
-Published 2026-11-09. Confidentiality reviewed: all data synthetic, no employer data. Native Microsoft Excel recalculation and Power Query refresh tests are still owed — see Verification Report. Source paths in the sample workbook are placeholders, not credentials.
+Published 2026-11-12. Confidentiality reviewed: all data synthetic, no employer data. Microsoft Excel recalculation and Power Query refresh have not been tested. See Verification Report. Source paths in the sample workbook are placeholders, not credentials.

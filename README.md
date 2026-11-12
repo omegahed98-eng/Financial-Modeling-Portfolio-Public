@@ -2,9 +2,9 @@
 
 **12 Excel models · synthetic data only**
 
-A hands-on finance portfolio showing how business-line assumptions, source-system extracts, margin drivers and cash conversion flow into financial decisions. Each `.xlsx` is self-contained. No confidential employer data or cross-workbook Excel formulas are used.
+The models cover business-line planning, source-system extracts, margin analysis and cash forecasting. Each `.xlsx` is self-contained. No confidential employer data or cross-workbook Excel formulas are used.
 
-> **Start with the [portfolio guide](docs/START_HERE.md)** for a five-minute reading path, the source-data contract and workbook operation.
+> **Start with the [portfolio guide](docs/START_HERE.md)** for a quick read, the source-data contract and instructions for using the workbooks.
 
 ## Models by discipline
 
@@ -32,18 +32,18 @@ A hands-on finance portfolio showing how business-line assumptions, source-syste
 
 - **08 — Management reporting and forecast accuracy:** [Workbook](models/Model_08_Management_Reporting_Forecast_Accuracy_Fixed.xlsx)
 
-## How to explore
+## Where to start
 
-Open **09 → 10 → 11 → 12** and check `Cover`, `Outputs`, `Checks`. Then follow their fit with 03 / 05 / 08. New Models 09–12 have shared keys, source registers, header/dimension maps, a 21-column canonical staging schema, per-source ETL steps, and Power Query M text. Sample CSV/Excel input formats are included under [`examples/sources`](examples/sources/).
+Start with **09 → 10 → 11 → 12**. Review `Cover`, `Outputs` and `Checks` in each workbook, then compare them with Models 03, 05 and 08. Models 09–12 use shared keys, source registers, header and dimension maps, a 21-column canonical staging schema, per-source ETL steps and Power Query M code. Sample CSV/Excel input formats are included under [`examples/sources`](examples/sources/).
 
-**Power Query setup:** One-time manual query installation is needed; M is provided in each workbook and under [`power-query/`](power-query/). Afterwards, `Inputs!B8` selects the source and `Inputs!B9` sets `SINGLE` or `ALL`, while Source Register controls paths and enabled sources. Please review [setup limitations](docs/VERIFICATION_REPORT.md) before assuming Refresh All is preconfigured.
+**Power Query setup:** The queries must be installed manually once in desktop Excel; M is provided in each workbook and under [`power-query/`](power-query/). Afterwards, `Inputs!B8` selects the source and `Inputs!B9` sets `SINGLE` or `ALL`, while Source Register controls paths and enabled sources. See [setup limitations](docs/VERIFICATION_REPORT.md). Refresh All is not preconfigured.
 
-## Evidence & boundaries
+## Test results and limitations
 
 - [Start Here](docs/START_HERE.md) · [Verification and negative tests](docs/VERIFICATION_REPORT.md) · [Repository design](docs/REPO_STRUCTURE.md)
 - Models 09–12: **baseline PASS**, one **PASS → FAIL → PASS** test each, zero cached formula errors, zero external workbook-link parts.
 - Model 11's native chart is a **stacked-column waterfall visualization**, not a signed-off Microsoft Excel native Waterfall chart implementation.
 - Models 01–08: unchanged Round 12 synthetic-scope baselines (**38/50 certified in prior audit, 12 remain outstanding**); not reworked or recertified here.
-- **No production data, credentialed connectors, audited source documents, native Power Query execution or professional sign-off.** Published to GitHub as a hiring-manager showcase. Native Excel recalculation and Power Query refresh are still unverified — see Verification Report.
+- **No production data, credentialed connectors, audited source documents, native Power Query execution or professional sign-off.** The repository is published on GitHub. Native Excel recalculation and Power Query refresh have not been verified. See the Verification Report.
 
 `supporting/Supporting_Schedules_Template_Fixed.xlsx` is a reference workbook, **not** a live dependency.

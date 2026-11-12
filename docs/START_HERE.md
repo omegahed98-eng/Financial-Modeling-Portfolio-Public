@@ -1,21 +1,21 @@
 # Start Here — Synthetic FP&A & Operational Finance Portfolio
 
-**Twelve self-contained Excel models | Hiring-manager showcase**
+**Twelve self-contained Excel models**
 
-This portfolio demonstrates planning, operational costing, capital allocation, commercial decisions, diligence, cash management and management reporting. Every number and entity in the models is synthetic. No GMED/EGMED source data, confidential commercial inputs or live ERP records are included.
+The models cover planning, operational costing, capital allocation, commercial decisions, diligence, cash management and management reporting. Every number and entity in the models is synthetic. No GMED/EGMED source data, confidential commercial inputs or live ERP records are included.
 
-**For a five-minute review:** Open Model 09 → `Outputs` to see the total-company P&L and manager inputs; Model 10 → `Outputs` for quarterly rolling forecast; Model 11 → `Outputs` for the price/volume/mix waterfall; Model 12 → `Outputs` for 13-week liquidity. Review `Checks!B3` in each new workbook. Then explore Model 03, 05 or 08 for deeper integration.
+**To review the models:** Open Model 09 → `Outputs` to see the total-company P&L and manager inputs; Model 10 → `Outputs` for quarterly rolling forecast; Model 11 → `Outputs` for the price/volume/mix waterfall; Model 12 → `Outputs` for 13-week liquidity. Review `Checks!B3` in each new workbook. Then review Model 03, 05 or 08 for the related integrated models.
 
 ## Portfolio navigation by functional area
 
-| Group | Models | What it demonstrates |
+| Group | Models | Contents |
 |---|---|---|
 | **FP&A Core** | 03, 05, 09, 10, 11, 12 | Integrated statements; working capital; departmental budgeting; versioned rolling forecast; price/volume/mix performance explanation; near-term liquidity |
 | **Costing & Operations** | 02, 04 | Manufacturing cost and inventory; capex investment cases and dated returns |
 | **Deals & Pricing** | 01, 06, 07 | Bid contract economics; pricing/product mix; acquisition diligence and QoE |
 | **Reporting** | 08 | Management reporting, variance reporting and forecast accuracy |
 
-**Suggested deep-dive sequence:** 09 → 10 → 11 → 08 → 12 → 05 → 03 → 02 → 04 → 06 → 01 → 07. This starts with operating FP&A, connects performance and cash, then explores specialized decisions.
+**Open the models in this order:** 09 → 10 → 11 → 08 → 12 → 05 → 03 → 02 → 04 → 06 → 01 → 07.
 
 ## New models and their neighboring baselines
 
@@ -58,14 +58,14 @@ All four new files use the **identical 21-column `Staging!A6:U6` canonical fact 
 6. Inspect `QualityStatus=FAIL` and `QualityMessage` before relying on an output. Missing optional columns are filled with null/declared defaults; renamed headers use aliases; extra columns are ignored; unknown populated dimension codes and invalid amounts are rejected. The calculation engine includes only `PASS` rows.
 7. For an integration to another portfolio workbook, export an approved canonical fact extract and map its keys to that workbook's input expectations. **No workbook contains formula links to another workbook.**
 
-**Practical source reality:** Models 09–11 include ERP-like exports, GL/CSV data and Excel alternatives. Model 12 includes bank CSV/Excel alternatives, a GL cash extract, AR/AP subledger records, inventory commitments and payroll. The bank illustration is an **opening balance snapshot**, not a comprehensive transaction-to-bank reconciliation. Source file formats demonstrated are CSV and XLSX; database APIs, OFX, encrypted banks and unrestricted schema inference are not implemented.
+**Source formats and examples:** Models 09–11 include ERP-like exports, GL/CSV data and Excel alternatives. Model 12 includes bank CSV/Excel alternatives, a GL cash extract, AR/AP subledger records, inventory commitments and payroll. The bank illustration is an **opening balance snapshot**, not a full transaction-to-bank reconciliation. Source file formats demonstrated are CSV and XLSX; database APIs, OFX, encrypted banks and unrestricted schema inference are not implemented.
 
 ## Verification and limitations
 
 - Models 09–12: baseline PASS and a documented isolated PASS → FAIL → PASS mutation each. Exported workbooks contain zero cached Excel error cells and zero external workbook-link parts.
 - CSV ↔ XLSX source switches were independently normalized on provided fixtures to verify matching canonical semantics, but **Microsoft Power Query was not executed in this environment**. Native Excel installation, workbook refresh, chart UI, protection and owner signoff still require desktop validation.
-- Existing Models 01–08 and the Supporting Schedules reference are **preserved byte-for-byte** in the ZIP, not modified or rebuilt.
+- Existing Models 01–08 and the Supporting Schedules reference are **preserved byte-for-byte** in the repository, not modified or rebuilt.
 - The authoritative Round 12 issue status remains **38/50 synthetic-scoped fixed; 12 outstanding**. No new original-issue fix is claimed by this expansion.
-- This is a skills demonstration, not a production financial system, audited model or live operational data integration. Published to GitHub as a hiring-manager showcase.
+- The workbooks are not a production financial system, audited models or live operational data integration. The repository is published on GitHub.
 
-Next: open [`VERIFICATION_REPORT.md`](VERIFICATION_REPORT.md) for exact mutation coordinates, structural tests, source-switch evidence and remaining blockers.
+For mutation coordinates, structural tests, source-switch evidence and remaining blockers, see [`VERIFICATION_REPORT.md`](VERIFICATION_REPORT.md).
