@@ -7,7 +7,7 @@ This guide covers two ways to use the workbooks. The first uses the sample data 
 1. Open the [models folder](../models/) and download one workbook (`.xlsx`). You do not need to download all 12.
 2. Open the workbook in Excel. The sample data is already loaded in the workbook's `Staging` sheet where applicable. Models 01–08 also contain their own synthetic inputs and schedules.
 3. Open `Cover`, then `Outputs`, then `Checks`. Start with the output sheet to see the model result. Use `Checks` to review the workbook's controls. For Models 09–12, the overall status is shown in `Checks!B3`.
-4. That is all you need for the demo. Do not install Power Query or download the example source files just to review the preloaded model. In Model 09, you can also change the yellow `AmountCAD` cells on the three business-line manager sheets (`BL01`/`BL02`/`BL03 Manager`) to see the totals move.
+4. That is all you need for the demo. Do not install Power Query or download the example source files just to review the preloaded model. In Model 09, you can also change the yellow `AmountCAD` cells on the `Budget Input` sheet to see the totals move.
 
 **Models 01–08 need no input files.** They are self-contained and use built-in synthetic data. The Supporting Schedules workbook is not required to run any model.
 

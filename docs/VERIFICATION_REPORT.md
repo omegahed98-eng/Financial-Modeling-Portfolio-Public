@@ -55,12 +55,12 @@ Each test was performed in an in-memory new workbook immediately before final ex
 
 | Model | Source cell | Mutation and restoration | Target | Target status | Overall Checks!B3 |
 |---|---|---|---|---|---|
-| 09 | `BL01 Manager!G7` | `148800` → `-1` → restored | `Checks!B9` | PASS → FAIL → PASS | PASS → FAIL → PASS |
+| 09 | `Budget Input!D8` | `148800` → `-1` → restored | `Checks!B9` | PASS → FAIL → PASS | PASS → FAIL → PASS |
 | 10 | `Inputs!B12` | `2` → `5` → restored | `Checks!B9` | PASS → FAIL → PASS | PASS → FAIL → PASS |
 | 11 | `Staging!L7` | `1000` → `-1` → restored | `Checks!B9` | PASS → FAIL → PASS | PASS → FAIL → PASS |
 | 12 | `Staging!O8` | `2027-01-05 00:00:00+00:00` → `None` → restored | `Checks!B9` | PASS → FAIL → PASS | PASS → FAIL → PASS |
 
-**Test coverage (exact formulas/logic):** Model 09 `Checks!B9` rejects negative `Staging!K7:K78` amounts (the edited manager `BL01 Manager!G7` flows through `Staging!K7`); Model 10 `Checks!B9` requires integer `0 ≤ Inputs!B12 ≤ 4`; Model 11 `Checks!B9` rejects negative `Staging!L7:L14` quantities; Model 12 `Checks!B9` checks nonblank due-date counts for all AR/AP/inventory/payroll facts in `Staging!O7:O40`. The control set also checks version/scenario hygiene, financial reconciliation, coverage and source lineage. The full exact mutation JSON is in `docs/mutation_tests.json`.
+**Test coverage (exact formulas/logic):** Model 09 `Checks!B9` rejects negative `Staging!K7:K78` amounts (the edited `Budget Input!D8` flows through `Staging!K7`); Model 10 `Checks!B9` requires integer `0 ≤ Inputs!B12 ≤ 4`; Model 11 `Checks!B9` rejects negative `Staging!L7:L14` quantities; Model 12 `Checks!B9` checks nonblank due-date counts for all AR/AP/inventory/payroll facts in `Staging!O7:O40`. The control set also checks version/scenario hygiene, financial reconciliation, coverage and source lineage. The full exact mutation JSON is in `docs/mutation_tests.json`.
 
 ## Two-format switching proof — reference normalization only
 
